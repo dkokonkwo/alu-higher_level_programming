@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 def islower(c: str) -> bool:
-    letters = []
-    for i in range(ord('a'), ord('z') + 1):
-        letters.append(chr(i))
-    if c in letters:
+    if ord(c) >= ord('a') and ord(c) <= ord('z'):
         return True
     else:
         return False
