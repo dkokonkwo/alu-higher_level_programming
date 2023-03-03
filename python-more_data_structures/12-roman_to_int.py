@@ -1,4 +1,4 @@
-#!usr/bin/python3:
+#!/usr/bin/python3:
 def roman_to_int(roman_string):
     list_of_num = []
     roman_dictionary = {
@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
         'D': 500,
         'M': 1000
     }
-    if roman_string.__str__() or roman_string is None:
+    if roman_string.__str__():
         for letter in roman_string:
             if letter in roman_dictionary:
                 list_of_num.append(roman_dictionary[letter])
@@ -23,5 +23,7 @@ def roman_to_int(roman_string):
             else:
                 them_changes.append(x)
         return sum(them_changes)
+    elif roman_string is None:
+        return None
     else:
         return 0
