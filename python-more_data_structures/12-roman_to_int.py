@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
         'D': 500,
         'M': 1000
     }
-    if roman_string.__str__():
+    if isinstance(roman_string, str):
         for letter in roman_string:
             if letter in roman_dictionary:
                 list_of_num.append(roman_dictionary[letter])
@@ -24,6 +24,6 @@ def roman_to_int(roman_string):
                 them_changes.append(x)
         return sum(them_changes)
     elif roman_string is None:
-        return None
+        return 0
     else:
         return 0
