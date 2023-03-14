@@ -4,5 +4,5 @@
 
 class Square:
     """defining the class"""
-    
+
     pass
