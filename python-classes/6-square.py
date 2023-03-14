@@ -7,8 +7,8 @@ class Square:
     """Defines private instance attribute"""
 
     def __init__(self, size=0, position=(0, 0)) -> None:
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -25,12 +25,12 @@ class Square:
     @property
     def position(self):
         return self.__position
-    
+
     @position.setter
     def position(self, value):
         check = 0
         while 1:
-            if type(value) is not tuple or len(value) is not 2:
+            if type(value) is not tuple or len(value) != 2:
                 check += 1
                 break
             if type(value[0]) is not int or type(value[1]) is not int:
@@ -39,7 +39,7 @@ class Square:
             if value[0] < 0 or value[1] < 0:
                 check += 1
             break
-        if check is 0:
+        if check == 0:
             self.__position = value
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -60,4 +60,4 @@ class Square:
                     print("#", end="")
                 print()
         else:
-            print()
+            print()   
