@@ -25,11 +25,11 @@ class Square:
         value = self.__size ** 2
         return value
 
-    def __eq__(self, other) -> bool: #equal
+    def __eq__(self, other) -> bool:   #equal
         return self.area() == other.area()
 
-    def __lt__(self, other) -> bool: #less than
+    def __lt__(self, other) -> bool:   #less than
         return self.area() < other.area()
 
-    def __le__(self, other) -> bool: #less than or equal to
+    def __le__(self, other) -> bool:   #less than or equal to
         return self.area() <= other.area()
