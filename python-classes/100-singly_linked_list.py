@@ -3,6 +3,8 @@
 
 
 class Node:
+    """defines data and next node methods"""
+
     def __init__(self, data, next_node=None) -> None:
         self.data = data
         self.next_node = next_node
