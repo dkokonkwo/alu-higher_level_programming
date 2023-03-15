@@ -4,6 +4,7 @@
 
 import math
 
+
 class MagicClass:
     """defines initiation, area and circumfrence methods"""
     def __init__(self, radius=0) -> None:
@@ -13,6 +14,6 @@ class MagicClass:
 
     def area(self):
         return ((self.__radius ** 2) * (math.pi))
-    
-    def circumfrence(self):
+
+    def circumference(self):
         return (2 * (math.pi) * self.__radius)
