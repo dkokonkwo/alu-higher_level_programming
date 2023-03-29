@@ -1,2 +1,0 @@
--- list records with same score
-SELECT * FROM second_table WHERE 
