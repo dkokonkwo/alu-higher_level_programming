@@ -1,0 +1,2 @@
+-- lists genre and number of shows linked
+SELECT `tv_genre` AS `genre`, COUNT `tv_shows`
