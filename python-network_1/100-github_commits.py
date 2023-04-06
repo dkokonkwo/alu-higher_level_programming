@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 Python script to list 10 most recent commits
