@@ -1,15 +1,25 @@
 #!/usr/bin/python3
-"""defines a function that prints text with new lines"""
+"""defines function to print text with 2 newlines after '.' '?' or ':' chars"""
 
 
 def text_indentation(text):
-    """add 2 new lines when char is . or :"""
+    """prints text with 2 newlines after '.' '?' or ':' chars"""
     if type(text) is not str:
         raise TypeError("text must be a string")
-    new_string = ""
-    for character in text:
-        if character == "." or character == ":":
-            new_string += character + "\n\n"
+    previous = ""
+    for char in text:
+        # leading whitespace
+        if char is " " and char is text[0] and previous is "":
+            previous = "\n"
+            continue
+        # whitespaces after newline
+        if char is " " and previous is "\n":
+            continue
+        # matching character, print char, print newlines
+        if char is "." or char is "?" or char is ":":
+            print(char)
+            print()
+            previous = "\n"
         else:
-            new_string += character
-    print(new_string.rstrip())
+            print(char, end="")
+            previous = char
