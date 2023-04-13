@@ -4,7 +4,8 @@
 
 def matrix_divided(matrix, div):
     """divides matrix by integer and raound to 2 d.p"""
-    error_message = "matrix must be a matrix (list of lists) of integers/floats"
+    error_message = "matrix must be a matrix \
+    (list of lists) of integers/floats"
     if type(matrix) is not list:
         raise TypeError(error_message)
     len_rows = []
@@ -23,6 +24,7 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    new_matrix = list(map(lambda row:
-                        list(map(lambda e: round(e / div, 2), row)), matrix))
+    new_matrix = list(map(lambda row: 
+                      list(map(lambda e: round(e / div, 2), row)), 
+                      matrix))
     return new_matrix
