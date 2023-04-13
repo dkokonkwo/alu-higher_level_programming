@@ -24,7 +24,7 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    new_matrix = list(map(lambda row: 
-                      list(map(lambda e: round(e / div, 2), row)), 
+    new_matrix = list(map(lambda row:
+                      list(map(lambda e: round(e / div, 2), row)),
                       matrix))
     return new_matrix
