@@ -4,7 +4,7 @@
 
 def matrix_divided(matrix, div):
     """divides matrix by integer and raound to 2 d.p"""
-    error_message = "matrix must be a matrix \
+    error_message = "matrix must be a matrix\
     (list of lists) of integers/floats"
     if type(matrix) is not list:
         raise TypeError(error_message)
