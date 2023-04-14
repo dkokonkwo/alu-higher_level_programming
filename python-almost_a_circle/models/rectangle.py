@@ -79,13 +79,13 @@ class Rectangle(Base):
         return (self.width * self.height)
 
     def display(self):
-        """prints the shape of the rectangle"""
-        row = ''
-        for x in range(self.height):
-            for y in range(self.width):
-                while len(row) < self.width:
-                    row += "#"
-            print(row)
+        """prints in stdout the rectangle instance with '#'
+        with offsets x and y taken into account"""
+        for vertical in range(self.y):
+            print("")
+        for row in range(self.height):
+            print(" "*self.x, end="")
+            print("#"*self.width)
 
     def __str__(self):
         """override __str__ with new string in the format
