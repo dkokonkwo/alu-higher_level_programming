@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+"""creates class Base and defines methods"""
+
+
+class Base:
+    """manages id attribute in all future classes"""
+    __nb_objects = 0
+
+    def __init__(self, id=None):
+        """
+        instantiates id and equates to nb_objects if none
+        """
+        if id != None:
+            self.id = id
+        else:
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
