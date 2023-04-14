@@ -2,6 +2,11 @@
 """creates class Base and defines methods"""
 
 
+import json
+import csv
+import turtle
+
+
 class Base:
     """manages id attribute in all future classes"""
     __nb_objects = 0
@@ -43,11 +48,9 @@ class Base:
     def from_json_string(json_string):
         """returns the list of the JSON string representation
         for list of dictionaries"""
-        import json
-        if json_string is None:
-            return []
-        else:
-            return json.loads(json_string)
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        return json.dumps(list_dictionaries)
 
     @classmethod
     def create(cls, **dictionary):
