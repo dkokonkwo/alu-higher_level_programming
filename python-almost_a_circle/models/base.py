@@ -10,7 +10,7 @@ class Base:
         """
         instantiates id and equates to nb_objects if none
         """
-        if id != None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
