@@ -6,8 +6,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
-     """class for Rectangle instances with
-    private instance attributes width, height, x, and y"""
+     """class for Rectangle, attributes width, height, x, and y"""
     def __init__(self, width, height, x=0, y=0, id=None):
         super.__init__(id)
         self.width = width
@@ -22,6 +21,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
+         """sets private instance attribute width"""
         self.__width = value
 
     @property
@@ -31,6 +31,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+         """sets private instance attribute height"""
         self.__height = value
 
     @property
@@ -40,6 +41,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+         """sets private instance attribute x"""
         self.__x = value
 
     @property
@@ -49,4 +51,5 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
+         """sets private instance attribute y"""
         self.__y = value
