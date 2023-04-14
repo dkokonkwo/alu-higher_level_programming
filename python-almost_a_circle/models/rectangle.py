@@ -21,7 +21,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-         """sets private instance attribute width"""
+        """sets private instance attribute width"""
         self.__width = value
 
     @property
@@ -31,7 +31,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-         """sets private instance attribute height"""
+        """sets private instance attribute height"""
         self.__height = value
 
     @property
@@ -41,7 +41,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-         """sets private instance attribute x"""
+        """sets private instance attribute x"""
         self.__x = value
 
     @property
@@ -51,5 +51,5 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-         """sets private instance attribute y"""
+        """sets private instance attribute y"""
         self.__y = value
