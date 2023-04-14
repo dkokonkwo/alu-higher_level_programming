@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""class inherits from Base class"""
+"""defines Rectangle class that inherits from Base"""
 
 
 from models.base import Base
 
 
 class Rectangle(Base):
-    """class for Rectangle, attributes width, height, x, and y"""
+    """class for Rectangle instances with p.i.a width,height,x,and y"""
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.width = width
@@ -17,7 +17,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """gets private instance attribute width"""
-        return self.__width
+        return (self.__width)
 
     @width.setter
     def width(self, value):
@@ -32,7 +32,7 @@ class Rectangle(Base):
     @property
     def height(self):
         """gets private instance attribute height"""
-        return self.__height
+        return (self.__height)
 
     @height.setter
     def height(self, value):
@@ -47,29 +47,29 @@ class Rectangle(Base):
     @property
     def x(self):
         """gets private instance attribute x"""
-        return self.__x
+        return (self.__x)
 
     @x.setter
     def x(self, value):
         """sets private instance attribute x"""
         if type(value) is not int:
             raise TypeError("x must be an integer")
-        elif value <= 0:
-            raise ValueError("x must be > 0")
+        elif value < 0:
+            raise ValueError("x must be >= 0")
         else:
             self.__x = value
 
     @property
     def y(self):
         """gets private instance attribute y"""
-        return self.__y
+        return (self.__y)
 
     @y.setter
     def y(self, value):
         """sets private instance attribute y"""
         if type(value) is not int:
             raise TypeError("y must be an integer")
-        elif value <= 0:
-            raise ValueError("y must be > 0")
+        elif value < 0:
+            raise ValueError("y must be >= 0")
         else:
             self.__y = value
