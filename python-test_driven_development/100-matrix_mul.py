@@ -38,7 +38,7 @@ def matrix_mul(m_a, m_b):
     for x in range(len(m_a)):
         result.append([])
     for y in result:
-        for z in range(len(m_b)):
+        for z in range(len(m_a)):
             y.append(0)
     for i in range(len(m_a)):
         # loop for columns
