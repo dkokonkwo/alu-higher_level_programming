@@ -18,6 +18,6 @@ if __name__ == "__main__":
                 BINARY name = '{}'".format(argv[4]))
     query_rows = cur.fetchall()
     for x in query_rows:
-            print(x)
+        print(x)
     cur.close()
     conn.close()
