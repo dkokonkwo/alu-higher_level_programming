@@ -3,6 +3,7 @@
 defines State class that inherits from Base class
 and links to sql
 """
+
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
