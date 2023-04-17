@@ -122,3 +122,13 @@ class Rectangle(Base):
                     self.x = (kwargs[kw])
                 if kw == "y":
                     self.y = (kwargs[kw])
+
+    def to_dictionary(self):
+        """returns dictionary of all attributes"""
+        el_dicto = {}
+        el_dicto['x'] = self.x
+        el_dicto['y'] = self.y
+        el_dicto['id'] = self.id
+        el_dicto['height'] = self.height
+        el_dicto['width'] = self.width
+        return el_dicto
