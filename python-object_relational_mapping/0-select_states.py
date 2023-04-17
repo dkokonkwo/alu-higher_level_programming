@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""lists all the states in the table of a database"""
+"""
+lists all the states in the table of a database
+"""
 
 
 if __name__ == "__main__":
