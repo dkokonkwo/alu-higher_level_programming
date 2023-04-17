@@ -14,7 +14,9 @@ if __name__ == "__main__":
                 WHERE s.name = '{}' \
                 ORDER BY c.id ASC".format(argv[4]))
     query_rows = cur.fetchall()
-    for row in query_rows:
-        print(row)
+    for i, row in enumerate(query_rows, start=0):
+        if i != 0:
+            print(", ", end="")
+        print(row[0], end="")
     cur.close()
     conn.close()
