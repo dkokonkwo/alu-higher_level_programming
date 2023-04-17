@@ -29,7 +29,7 @@ class Base:
             return "[]"
         if len(list_dictionaries) == 0:
             return "[]"
-        return json.dump(list_dictionaries)
+        return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
