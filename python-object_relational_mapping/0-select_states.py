@@ -8,7 +8,7 @@ if __name__ == "__main__":
     conn = MySQLdb.connect(
         host="localhost"
         user=argv[1],
-        passwd=argv[2]",
+        passwd=argv[2],
         db=argv[[3]]
     )
 
