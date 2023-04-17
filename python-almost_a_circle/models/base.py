@@ -25,9 +25,6 @@ class Base:
     def to_json_string(list_dictionaries):
         """returns JSON string representation of list of dictionaries"""
         import json
-        for item in list_dictionaries:
-            if type(item) is not dict:
-                raise TypeError("list must contain dictionaries")
         if list_dictionaries is None:
             return "[]"
         if len(list_dictionaries) == 0:
