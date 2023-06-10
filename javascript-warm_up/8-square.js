@@ -3,7 +3,7 @@ const myArgs = process.argv.slice(2);
 const myVar = 'X';
 const num = Number(myArgs[0]);
 if (isNaN(num)) {
-  console.log("Missing size");
+  console.log('Missing size');
 } else {
     let i = 0;
     string = '';
