@@ -6,7 +6,7 @@ if (isNaN(num)) {
   console.log('Missing size');
 } else {
   let i = 0;
-  string = '';
+  var string = '';
   for (i = 0; i < num; i++) {
     string += myVar;
   }
