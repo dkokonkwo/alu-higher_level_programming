@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const myArgs = process.argv.slice(2);
-if (myArgs.length == 0 || myArgs.length == 1) {
+if (myArgs.length === 0 || myArgs.length === 1) {
   console.log(0)
 } else {
   let i = 0;
