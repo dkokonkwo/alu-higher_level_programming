@@ -21,5 +21,5 @@ if (myArgs.length === 0 || myArgs.length === 1) {
       maxt = myArgs[i];
     }
   }
-  console.log(maxt)
+  console.log(maxt);
 }
