@@ -10,7 +10,7 @@ if (myArgs.length === 0 || myArgs.length === 1) {
     max = myArgs[0];
     max_2 = myArgs[1];
   } else {
-    max = myArg[1];
+    max = myArgs[1];
     max_2 = myArgs[0];
   }
   for (i = 2; i < myArgs.length; i++) {
