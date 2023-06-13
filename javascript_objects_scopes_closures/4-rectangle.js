@@ -19,12 +19,14 @@ class Rectangle {
       console.log(row);
     }
   }
+
   // swaps width with height
   rotate () {
     const holder = this.height;
     this.height = this.width;
     this.width = holder;
   }
+
   // doubles the width and height
   double () {
     this.width = this.width * 2;
