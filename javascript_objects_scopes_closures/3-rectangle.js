@@ -6,6 +6,7 @@ class Rectangle {
       this.height = h;
     }
   }
+
   // method prints put the shape of the rectangle
   print () {
     let i = 0;
