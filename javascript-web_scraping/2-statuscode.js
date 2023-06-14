@@ -6,6 +6,6 @@ request(myArg[0], function (err, response) {
   if (err) {
     console.log(err);
   } else {
-    console.log('code: ' + response.StatusCode);
+    console.log('code: ' + response.statusCode);
   }
 });
