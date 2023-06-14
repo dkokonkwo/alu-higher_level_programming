@@ -2,7 +2,7 @@
 // prints out the request status code
 const request = require('request');
 const myArg = process.argv.slice(2);
-request(myArg[0], function (err, reponse) {
+request(myArg[0], function (err, response) {
   if (err) {
     console.log(err);
   } else {
