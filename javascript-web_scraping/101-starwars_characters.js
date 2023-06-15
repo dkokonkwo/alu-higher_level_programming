@@ -2,7 +2,7 @@
 // script that prints all characters of a Star Wars movie
 const request = require('request');
 const myArgs = process.argv.slice(2);
-const URLstring = 'https://swapi-api.hbtn.io/api/films/' + myArgs[0];
+const URLstring = 'https://swapi-api.alx-tools.com/api/films/' + myArgs[0];
 // recursive function
 function characterFunc (character, i = 0, stop) {
   if (i === stop) {
