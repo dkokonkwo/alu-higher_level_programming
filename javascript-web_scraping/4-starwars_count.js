@@ -5,11 +5,11 @@ const request = require('request');
 let count = 0;
 request(myArg[0], function (err, response, body) {
   if (err) {
-    console.log(err)
+    console.log(err);
   } else {
     const results = JSON.parse(body).results;
     let i = 0;
-    for (1 = 0; i < results.length; i++) {
+    for (i = 0; i < results.length; i++) {
       let u = 0;
       const characters = results[i].characters;
       for (u = 0; u < characters.length; u++) {
